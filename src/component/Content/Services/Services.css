@@ -1,0 +1,74 @@
+#services-section {
+    min-height: 90vh;
+}
+
+#services-section .about-description {
+    font-size: 16px;
+    line-height: 1.4;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+#services-section .services-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    animation: showUpFromBottom linear 2s;
+}
+
+
+#services-section .services-items__item {
+    width: 30%;
+    text-align: left;
+    background-size: cover;
+    background: url('https://media.istockphoto.com/photos/being-organized-is-essential-for-getting-work-done-picture-id1193685384?k=20&m=1193685384&s=612x612&w=0&h=ePKrgGZQEaXniGKEdqlRZUUdvyQlPS1eoS5WvVvJyVQ=') no-repeat;
+    border-radius: 20px;    
+}
+
+.services-items__item .item-container {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;    
+} 
+
+.services-items__item img {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.services-items__item .item-heading {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.services-items__item .item-content {
+    font-size: 16px;
+    color: white;
+}
+
+@keyframes showUpFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 740px) {
+    #services-section .services-items {
+        display: block;
+    }
+
+    #services-section .services-items__item {
+        width: 100%;
+        margin-top: 10px; 
+    }
+    
+}
